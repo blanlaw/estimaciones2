@@ -1,4 +1,3 @@
-
 # 📋 Estimación Técnica de Desarrollo
 ## Portal File Proveedores — Bitrix24
 
@@ -511,6 +510,104 @@ SEP 01 ────────────────────────�
 - [ ] Definir si el módulo de carga masiva es CSV, Excel o ambos
 - [ ] Agendar reunión de kickoff con todas las áreas involucradas (Logística, Finanzas, Contabilidad, Tesorería)
 - [ ] Congelar alcance y firmar aprobación antes de iniciar desarrollo
+
+---
+
+## 10. Cuadros de Estimación Consolidados
+
+### 📊 Cuadro A — Detalle Completo de Tareas por Módulo
+
+| Módulo | Tarea | Horas |
+|--------|-------|------:|
+| **M1 — Estructura de Datos** | Diseño y creación de campos personalizados en Compañía CRM | 3 h |
+| **M1 — Estructura de Datos** | Creación de SPA (Smart Process Automation) con todos sus campos | 5 h |
+| **M1 — Estructura de Datos** | Configuración de validaciones y campos obligatorios | 2 h |
+| **M1 — Estructura de Datos** | Pruebas de estructura de datos | 2 h |
+| **M1 SUBTOTAL** | | **12 h** |
+| | | |
+| **M2 — Pipeline / Estados** | Diseño del pipeline en SPA (8 estados + etapas) | 4 h |
+| **M2 — Pipeline / Estados** | Configuración de transiciones permitidas por rol | 5 h |
+| **M2 — Pipeline / Estados** | Lógica condicional para OBSERVADO y RECHAZADO | 3 h |
+| **M2 — Pipeline / Estados** | Pruebas de flujo completo | 3 h |
+| **M2 SUBTOTAL** | | **15 h** |
+| | | |
+| **M3 — Roles y Permisos** | Configuración de grupos y perfiles de acceso en Bitrix24 | 3 h |
+| **M3 — Roles y Permisos** | Configuración de permisos por entidad CRM y SPA | 5 h |
+| **M3 — Roles y Permisos** | Configuración de acceso Extranet para proveedores | 4 h |
+| **M3 — Roles y Permisos** | Restricciones de visibilidad de campos según rol | 3 h |
+| **M3 — Roles y Permisos** | Pruebas de permisos por cada rol (5 roles) | 4 h |
+| **M3 SUBTOTAL** | | **19 h** |
+| | | |
+| **M4 — Portal Extranet** | Diseño y configuración del portal Extranet en Bitrix24 | 6 h |
+| **M4 — Portal Extranet** | Mi Perfil — Información de usuario + Contacto y Representantes | 4 h |
+| **M4 — Portal Extranet** | Mi Perfil — Catálogo + Instalaciones | 2 h |
+| **M4 — Portal Extranet** | Mi Perfil — Cuentas bancarias + Homologación | 2 h |
+| **M4 — Portal Extranet** | Modal de Términos y Condiciones (primer ingreso obligatorio) | 2 h |
+| **M4 — Portal Extranet** | Módulo Historial / Órdenes de Servicio (lista + estados visuales) | 5 h |
+| **M4 — Portal Extranet** | Pantalla de detalle de OS — Info resumen + Ítems | 3 h |
+| **M4 — Portal Extranet** | Pantalla de detalle de OS — Historial de aprobaciones (línea de tiempo) | 3 h |
+| **M4 — Portal Extranet** | Formulario carga docs — Tipo Transporte (5 documentos) | 3 h |
+| **M4 — Portal Extranet** | Formulario carga docs — Estiba / Devolución + Desestiba | 2 h |
+| **M4 — Portal Extranet** | Formulario carga docs — Servicios Profesionales (condicional) + Gastos Adicionales | 3 h |
+| **M4 — Portal Extranet** | Indicadores visuales de estado (verde / amarillo / rojo) | 3 h |
+| **M4 — Portal Extranet** | Diseño responsive y UX del portal | 5 h |
+| **M4 — Portal Extranet** | Pruebas del portal como usuario proveedor | 5 h |
+| **M4 SUBTOTAL** | | **48 h** |
+| | | |
+| **M5 — Automatizaciones** | Auto-registro + generación de usuario Extranet | 5 h |
+| **M5 — Automatizaciones** | Envío de credenciales (template de bienvenida) | 3 h |
+| **M5 — Automatizaciones** | Notificación de OBSERVADO con motivo dinámico | 3 h |
+| **M5 — Automatizaciones** | Notificación de PAGADO / PAGO PARCIAL | 2 h |
+| **M5 — Automatizaciones** | Configuración de plantillas de correo HTML + variables dinámicas | 5 h |
+| **M5 — Automatizaciones** | Notificaciones internas por cambio de estado | 3 h |
+| **M5 — Automatizaciones** | Pruebas de todas las automatizaciones (escenarios reales) | 4 h |
+| **M5 SUBTOTAL** | | **25 h** |
+| | | |
+| **M6 — Carga Masiva** | Diseño del esquema de importación (mapeo de columnas, validaciones) | 4 h |
+| **M6 — Carga Masiva** | Desarrollo del script de carga masiva (API REST / parsing CSV/Excel) | 10 h |
+| **M6 — Carga Masiva** | Lógica de cruce por RUC + N° Factura / OS | 4 h |
+| **M6 — Carga Masiva** | Actualización masiva de estados en Bitrix24 vía API | 5 h |
+| **M6 — Carga Masiva** | Adjunción automática de PDFs de constancias de pago | 4 h |
+| **M6 — Carga Masiva** | Manejo de errores, log de resultados y rollback | 4 h |
+| **M6 — Carga Masiva** | Interfaz de carga (UI simple para Tesorería) | 4 h |
+| **M6 — Carga Masiva** | Pruebas con datos reales de Tesorería | 5 h |
+| **M6 SUBTOTAL** | | **40 h** |
+| | | |
+| **M7 — Correos** | Plantillas HTML responsive — Bienvenida + Términos y Condiciones | 3 h |
+| **M7 — Correos** | Plantillas HTML — OS generada + Observación con motivo | 3 h |
+| **M7 — Correos** | Plantillas HTML — Aprobación + Pago liquidado + Rechazo | 3 h |
+| **M7 — Correos** | Integración de variables dinámicas en cada plantilla (7 correos) | 3 h |
+| **M7 — Correos** | Configuración SMTP en Bitrix24 + Pruebas de entrega | 4 h |
+| **M7 SUBTOTAL** | | **16 h** |
+| | | |
+| **M8 — QA y Despliegue** | Configuración del dominio / subdominio del portal externo | 2 h |
+| **M8 — QA y Despliegue** | Configuración SSL y acceso seguro | 1 h |
+| **M8 — QA y Despliegue** | Integración con validación de XML SUNAT (si aplica) | 6 h |
+| **M8 — QA y Despliegue** | Documentación técnica del sistema desarrollado | 6 h |
+| **M8 — QA y Despliegue** | Capacitación — Usuarios internos (Finanzas, Contabilidad, Tesorería) | 4 h |
+| **M8 — QA y Despliegue** | Capacitación — Usuarios solicitantes | 2 h |
+| **M8 — QA y Despliegue** | QA integral — Flujo completo de inicio a fin | 8 h |
+| **M8 — QA y Despliegue** | Corrección de bugs post-QA | 5 h |
+| **M8 — QA y Despliegue** | Despliegue a producción y validación final | 4 h |
+| **M8 SUBTOTAL** | | **38 h** |
+
+---
+
+### 📋 Cuadro B — Resumen Ejecutivo por Módulo
+
+| # | Módulo | Tareas | Horas | % del Total | Semana(s) |
+|---|--------|-------:|------:|:-----------:|-----------|
+| M1 | Estructura de Datos / Campos Personalizados | 4 | 12 h | 5.6 % | S1 |
+| M2 | Pipeline / Flujo de Estados (SPA) | 4 | 15 h | 7.0 % | S1 |
+| M3 | Roles y Permisos | 5 | 19 h | 8.9 % | S1–S2 |
+| M4 | Portal Extranet del Proveedor | 14 | 48 h | 22.5 % | S2–S3 |
+| M5 | Automatizaciones y Disparadores | 7 | 25 h | 11.7 % | S3–S4 |
+| M6 | Carga Masiva de Pagos (Tesorería) | 8 | 40 h | 18.8 % | S4–S5 |
+| M7 | Plantillas y Notificaciones por Correo | 5 | 16 h | 7.5 % | S4 |
+| M8 | Configuración, QA, Documentación y Despliegue | 9 | 38 h | 17.8 % | S5–S6 |
+| | **TOTAL BASE** | **56 tareas** | **213 h** | **100 %** | **S1–S6** |
+| | **Buffer 15% (imprevistos / ajustes)** | — | +32 h | — | S6–S7 |
+| | **TOTAL RECOMENDADO** | | **245 h** | | **01 sep – 15 oct 2026** |
 
 ---
 
