@@ -283,182 +283,251 @@ El proyecto consiste en implementar un flujo centralizado en **Bitrix24** que pe
 
 ---
 
-## 5. Estimación de Tiempo — Lunes a Viernes, 8 h/día
+## 5. Estimación de Tiempo — Lunes a Viernes, 4 h/día
 
-> **Base de cálculo:** 8 horas laborales diarias, de lunes a viernes.  
-> **Total horas base:** 213 h → **27 días hábiles** (~5 semanas y 2 días)  
-> **Total con buffer 15%:** 245 h → **31 días hábiles** (~6 semanas y 1 día)  
+> **Base de cálculo:** 4 horas laborales diarias, de lunes a viernes.  
+> **Total horas base:** 213 h → **54 días hábiles** (~10 semanas y 4 días)  
+> **Total con buffer 15%:** 245 h → **62 días hábiles** (~12 semanas y 2 días)  
 > **Fecha de inicio propuesta:** 01 de septiembre de 2026  
-> **Fecha de entrega estimada (con buffer):** 13 de octubre de 2026
+> **Fecha de entrega base:** 12 de noviembre de 2026  
+> **Fecha de entrega estimada (con buffer):** 25 de noviembre de 2026
 
 ---
 
 ## 5.1 Cronograma Detallado — Semana a Semana
 
-### 📅 SEMANA 1 — Del 01 al 05 de septiembre (40 h)
-> **Objetivo:** Fundaciones del sistema — Datos + Pipeline + inicio de Roles
+> Cada semana aporta **20 horas** (5 días × 4 h/día)
+
+### 📅 SEMANA 1 — Del 01 al 05 de septiembre (20 h)
+> **Objetivo:** Kickoff + Estructura de datos completa (M1) + Pipeline inicio (M2)
 
 | Día | Fecha | Actividad | Módulo | Horas |
 |-----|-------|-----------|--------|-------|
-| Lunes | 01/09 | Kickoff + Diseño y creación de campos personalizados en Compañía CRM | M1 | 8 h |
-| Martes | 02/09 | Creación de la SPA con todos sus campos + validaciones obligatorias | M1 | 7 h |
-| Martes | 02/09 | Pruebas de estructura de datos | M1 | 1 h |
-| Miércoles | 03/09 | Diseño del pipeline en SPA (8 estados + etapas) | M2 | 4 h |
-| Miércoles | 03/09 | Configuración de transiciones permitidas por rol (inicio) | M2 | 4 h |
-| Jueves | 04/09 | Configuración de transiciones permitidas por rol (fin) + Lógica OBSERVADO/RECHAZADO | M2 | 7 h |
-| Jueves | 04/09 | Pruebas de flujo completo del pipeline | M2 | 1 h |
-| Viernes | 05/09 | Configuración de grupos y perfiles de acceso en Bitrix24 | M3 | 3 h |
-| Viernes | 05/09 | Inicio: Configuración de permisos por entidad CRM y SPA | M3 | 5 h |
+| Lunes | 01/09 | Kickoff + Diseño de campos personalizados en Compañía CRM | M1 | 4 h |
+| Martes | 02/09 | Creación de la SPA con todos sus campos | M1 | 4 h |
+| Miércoles | 03/09 | Configuración de validaciones y campos obligatorios + Pruebas M1 | M1 | 4 h |
+| Jueves | 04/09 | Diseño del pipeline en SPA (8 estados + etapas) | M2 | 4 h |
+| Viernes | 05/09 | Configuración de transiciones permitidas por rol (inicio) | M2 | 4 h |
 
-**Horas semana 1:** 40 h | **Acumulado:** 40 h / 213 h
+**Horas semana 1:** 20 h | **Acumulado:** 20 h / 213 h
 
-**✅ Entregable S1:** Estructura de datos completa (M1) + Pipeline funcional (M2) + Grupos de acceso base (M3 inicio)
+**✅ Entregable S1:** M1 completo (12 h) + M2 en progreso (8 h de 15 h)
 
 ---
 
-### 📅 SEMANA 2 — Del 08 al 12 de septiembre (40 h)
-> **Objetivo:** Finalizar Roles & Permisos + Arrancar Portal Extranet
+### 📅 SEMANA 2 — Del 08 al 12 de septiembre (20 h)
+> **Objetivo:** Completar Pipeline (M2) + Arrancar Roles y Permisos (M3)
 
 | Día | Fecha | Actividad | Módulo | Horas |
 |-----|-------|-----------|--------|-------|
-| Lunes | 08/09 | Fin de permisos por entidad CRM y SPA + Configuración acceso Extranet | M3 | 4 h |
-| Lunes | 08/09 | Restricciones de visibilidad de campos según rol | M3 | 4 h |
-| Martes | 09/09 | Pruebas de permisos por cada rol (5 roles) | M3 | 4 h |
-| Martes | 09/09 | Diseño y configuración del portal Extranet en Bitrix24 | M4 | 4 h |
-| Miércoles | 10/09 | Mi Perfil — Información de usuario + Contacto y Representantes | M4 | 4 h |
-| Miércoles | 10/09 | Mi Perfil — Catálogo + Instalaciones | M4 | 4 h |
-| Jueves | 11/09 | Mi Perfil — Cuentas bancarias + Homologación | M4 | 4 h |
-| Jueves | 11/09 | Modal de Términos y Condiciones (primer ingreso) | M4 | 4 h |
-| Viernes | 12/09 | Módulo Historial / Órdenes de Servicio (lista + estados visuales) | M4 | 5 h |
-| Viernes | 12/09 | Inicio: Pantalla de detalle de OS (info resumen + ítems) | M4 | 3 h |
+| Lunes | 08/09 | Configuración de transiciones por rol (fin) + Lógica OBSERVADO/RECHAZADO | M2 | 4 h |
+| Martes | 09/09 | Pruebas de flujo completo del pipeline | M2 | 3 h |
+| Martes | 09/09 | Configuración de grupos y perfiles de acceso en Bitrix24 | M3 | 1 h |
+| Miércoles | 10/09 | Configuración de grupos y perfiles + permisos por entidad CRM y SPA | M3 | 4 h |
+| Jueves | 11/09 | Configuración de acceso Extranet para proveedores | M3 | 4 h |
+| Viernes | 12/09 | Restricciones de visibilidad de campos según rol | M3 | 4 h |
 
-**Horas semana 2:** 40 h | **Acumulado:** 80 h / 213 h
+**Horas semana 2:** 20 h | **Acumulado:** 40 h / 213 h
 
-**✅ Entregable S2:** Roles y permisos completos (M3) + Portal Extranet — Perfil funcional (M4 parcial)
+**✅ Entregable S2:** M2 completo (15 h) + M3 en progreso (14 h de 19 h)
 
 ---
 
-### 📅 SEMANA 3 — Del 15 al 19 de septiembre (40 h)
-> **Objetivo:** Completar Portal Extranet (M4) + Inicio de Automatizaciones (M5)
+### 📅 SEMANA 3 — Del 15 al 19 de septiembre (20 h)
+> **Objetivo:** Completar Roles/Permisos (M3) + Iniciar Portal Extranet (M4)
 
 | Día | Fecha | Actividad | Módulo | Horas |
 |-----|-------|-----------|--------|-------|
-| Lunes | 15/09 | Detalle OS — Historial de aprobaciones (línea de tiempo) | M4 | 3 h |
-| Lunes | 15/09 | Formulario de carga de documentos — Tipo Transporte (5 docs) | M4 | 3 h |
-| Martes | 16/09 | Formulario carga docs — Estiba/Devolución + Desestiba | M4 | 2 h |
-| Martes | 16/09 | Formulario carga docs — Servicios Profesionales (condicional) + Gastos Adicionales | M4 | 3 h |
-| Martes | 16/09 | Indicadores visuales de estado (verde/amarillo/rojo) | M4 | 3 h |
-| Miércoles | 17/09 | Diseño responsive y UX del portal | M4 | 5 h |
-| Miércoles | 17/09 | Pruebas del portal como usuario proveedor | M4 | 3 h |
-| Jueves | 18/09 | Automatización: auto-registro + generación usuario Extranet | M5 | 5 h |
-| Jueves | 18/09 | Automatización: envío de credenciales (template bienvenida) | M5 | 3 h |
-| Viernes | 19/09 | Automatización: notificación OBSERVADO con motivo dinámico | M5 | 3 h |
-| Viernes | 19/09 | Automatización: notificación PAGADO / PAGO PARCIAL | M5 | 2 h |
-| Viernes | 19/09 | Automatización: notificaciones internas por cambio de estado | M5 | 3 h |
+| Lunes | 15/09 | Pruebas de permisos por cada rol (5 roles) | M3 | 4 h |
+| Martes | 16/09 | Diseño y configuración del portal Extranet en Bitrix24 | M4 | 4 h |
+| Miércoles | 17/09 | Mi Perfil — Información de usuario + Contacto y Representantes | M4 | 4 h |
+| Jueves | 18/09 | Mi Perfil — Catálogo + Instalaciones | M4 | 4 h |
+| Viernes | 19/09 | Mi Perfil — Cuentas bancarias + Homologación | M4 | 4 h |
 
-**Horas semana 3:** 39 h | **Acumulado:** 119 h / 213 h
+**Horas semana 3:** 20 h | **Acumulado:** 60 h / 213 h
 
-**✅ Entregable S3:** Portal Extranet 100% funcional (M4) + Automatizaciones principales activas (M5 parcial)
+**✅ Entregable S3:** M3 completo (19 h) + M4 en progreso — Perfil completo (16 h de 48 h)
 
 ---
 
-### 📅 SEMANA 4 — Del 22 al 26 de septiembre (40 h)
-> **Objetivo:** Cerrar Automatizaciones + Plantillas de correo + Inicio Carga Masiva
+### 📅 SEMANA 4 — Del 22 al 26 de septiembre (20 h)
+> **Objetivo:** Continuar Portal Extranet (M4) — Historial OS + Detalle OS
 
 | Día | Fecha | Actividad | Módulo | Horas |
 |-----|-------|-----------|--------|-------|
-| Lunes | 22/09 | Configuración de plantillas de correo HTML + variables dinámicas | M5 | 5 h |
-| Lunes | 22/09 | Pruebas de todas las automatizaciones (escenarios reales) | M5 | 3 h |
-| Martes | 23/09 | Plantillas HTML responsive — Bienvenida + Términos | M7 | 3 h |
-| Martes | 23/09 | Plantillas HTML — OS generada + Observación con motivo | M7 | 3 h |
-| Miércoles | 24/09 | Plantillas HTML — Aprobación + Pago liquidado + Rechazo | M7 | 3 h |
-| Miércoles | 24/09 | Integración de variables dinámicas en cada plantilla | M7 | 3 h |
-| Jueves | 25/09 | Configuración SMTP en Bitrix24 + Pruebas de entrega y renderizado | M7 | 5 h |
-| Jueves | 25/09 | Diseño del esquema de importación masiva (mapeo de columnas, validaciones) | M6 | 3 h |
-| Viernes | 26/09 | Desarrollo del script de carga masiva — Parsing CSV/Excel | M6 | 8 h |
+| Lunes | 22/09 | Modal de Términos y Condiciones (primer ingreso obligatorio) | M4 | 4 h |
+| Martes | 23/09 | Módulo Historial / Órdenes de Servicio (lista + estados visuales) | M4 | 4 h |
+| Miércoles | 24/09 | Pantalla detalle OS — Info resumen + Ítems | M4 | 4 h |
+| Jueves | 25/09 | Pantalla detalle OS — Historial de aprobaciones (línea de tiempo) | M4 | 4 h |
+| Viernes | 26/09 | Formulario carga docs — Tipo Transporte (5 documentos) | M4 | 4 h |
 
-**Horas semana 4:** 36 h | **Acumulado:** 155 h / 213 h
+**Horas semana 4:** 20 h | **Acumulado:** 80 h / 213 h
 
-**✅ Entregable S4:** Automatizaciones 100% (M5) + Correos listos (M7) + Script base carga masiva (M6 inicio)
+**✅ Entregable S4:** M4 en progreso — Historial OS + Detalle OS funcional (36 h de 48 h)
 
 ---
 
-### 📅 SEMANA 5 — Del 29 de septiembre al 03 de octubre (40 h)
-> **Objetivo:** Completar Módulo de Carga Masiva (M6) + Inicio QA y Configuración final
+### 📅 SEMANA 5 — Del 29 de septiembre al 03 de octubre (20 h)
+> **Objetivo:** Completar Portal Extranet (M4) + Iniciar Automatizaciones (M5)
 
 | Día | Fecha | Actividad | Módulo | Horas |
 |-----|-------|-----------|--------|-------|
-| Lunes | 29/09 | Script carga masiva — Integración API REST Bitrix24 | M6 | 5 h |
-| Lunes | 29/09 | Lógica de cruce por RUC + N° Factura / OS | M6 | 3 h |
-| Martes | 30/09 | Actualización masiva de estados en Bitrix24 vía API | M6 | 5 h |
-| Martes | 30/09 | Adjunción automática de PDFs de constancias de pago | M6 | 3 h |
-| Miércoles | 01/10 | Manejo de errores, log de resultados y rollback | M6 | 4 h |
-| Miércoles | 01/10 | Interfaz de carga (UI simple para Tesorería) | M6 | 4 h |
-| Jueves | 02/10 | Pruebas del módulo con datos reales de Tesorería | M6 | 5 h |
-| Jueves | 02/10 | Configuración dominio/subdominio + SSL + acceso seguro | M8 | 3 h |
-| Viernes | 03/10 | Integración validación XML SUNAT (si aplica) | M8 | 6 h |
+| Lunes | 29/09 | Formulario carga docs — Estiba/Devolución + Desestiba | M4 | 4 h |
+| Martes | 30/09 | Formulario carga docs — Servicios Profesionales (condicional) + Gastos Adicionales | M4 | 4 h |
+| Miércoles | 01/10 | Indicadores visuales de estado + Diseño responsive y UX | M4 | 4 h |
+| Jueves | 02/10 | Pruebas del portal como usuario proveedor | M4 | 2 h |
+| Jueves | 02/10 | Automatización: auto-registro + generación usuario Extranet | M5 | 2 h |
+| Viernes | 03/10 | Automatización: auto-registro + generación usuario Extranet (fin) | M5 | 4 h |
 
-**Horas semana 5:** 38 h | **Acumulado:** 193 h / 213 h
+**Horas semana 5:** 20 h | **Acumulado:** 100 h / 213 h
 
-**✅ Entregable S5:** Módulo de carga masiva 100% funcional (M6) + Infraestructura lista (M8 parcial)
+**✅ Entregable S5:** M4 completo (48 h) + M5 en progreso (6 h de 25 h)
 
 ---
 
-### 📅 SEMANA 6 — Del 06 al 10 de octubre (40 h)
-> **Objetivo:** QA integral + Correcciones + Documentación + Capacitación + Despliegue a producción
+### 📅 SEMANA 6 — Del 06 al 10 de octubre (20 h)
+> **Objetivo:** Continuar Automatizaciones (M5)
 
 | Día | Fecha | Actividad | Módulo | Horas |
 |-----|-------|-----------|--------|-------|
-| Lunes | 06/10 | QA integral — Flujo completo: Solicitante → Proveedor → Finanzas | M8 | 4 h |
-| Lunes | 06/10 | QA integral — Flujo completo: Contabilidad → Tesorería → Pago | M8 | 4 h |
-| Martes | 07/10 | Corrección de bugs detectados en QA | M8 | 5 h |
-| Martes | 07/10 | Documentación técnica del sistema desarrollado | M8 | 3 h |
-| Miércoles | 08/10 | Documentación técnica (continuación) | M8 | 3 h |
-| Miércoles | 08/10 | Capacitación — Usuarios internos: Finanzas + Contabilidad + Tesorería | M8 | 4 h |
-| Jueves | 09/10 | Capacitación — Usuarios solicitantes (Logística, Proyectos, Marketing) | M8 | 2 h |
-| Jueves | 09/10 | Despliegue a producción y configuración final | M8 | 4 h |
-| Viernes | 10/10 | **(Buffer S6 — ajustes finales, feedback post-capacitación, ajustes UX)** | Buffer | 8 h |
+| Lunes | 06/10 | Automatización: envío de credenciales (template de bienvenida) | M5 | 4 h |
+| Martes | 07/10 | Automatización: notificación OBSERVADO con motivo dinámico | M5 | 4 h |
+| Miércoles | 08/10 | Automatización: notificación PAGADO / PAGO PARCIAL | M5 | 4 h |
+| Jueves | 09/10 | Configuración de plantillas correo HTML + variables dinámicas | M5 | 4 h |
+| Viernes | 10/10 | Automatización: notificaciones internas por cambio de estado | M5 | 4 h |
 
-**Horas semana 6:** 37 h base + 8 h buffer | **Acumulado:** 213 h base / 221 h con buffer parcial
+**Horas semana 6:** 20 h | **Acumulado:** 120 h / 213 h
 
-**✅ Entregable S6 — CIERRE del proyecto base (213 h) + inicio de buffer**
+**✅ Entregable S6:** M5 en progreso (26 h de 25 h → prácticamente completo, queda pruebas)
 
 ---
 
-### 📅 SEMANA 7 — Del 13 al 15 de octubre (buffer restante)
-> **Objetivo:** Absorber imprevistos, ajustes por feedback, pruebas de regresión
+### 📅 SEMANA 7 — Del 13 al 17 de octubre (20 h)
+> **Objetivo:** Cerrar Automatizaciones (M5) + Plantillas de correo completas (M7)
 
-| Día | Fecha | Actividad | Horas |
-|-----|-------|-----------|-------|
-| Lunes | 13/10 | Buffer — Ajustes por feedback de usuarios en producción | 8 h |
-| Martes | 14/10 | Buffer — Correcciones menores, optimizaciones | 8 h |
-| Miércoles | 15/10 | Buffer — Validación final y cierre formal del proyecto | 8 h |
+| Día | Fecha | Actividad | Módulo | Horas |
+|-----|-------|-----------|--------|-------|
+| Lunes | 13/10 | Pruebas de todas las automatizaciones (escenarios reales) | M5 | 4 h |
+| Martes | 14/10 | Plantillas HTML — Bienvenida + Términos y Condiciones | M7 | 4 h |
+| Miércoles | 15/10 | Plantillas HTML — OS generada + Observación con motivo | M7 | 4 h |
+| Jueves | 16/10 | Plantillas HTML — Aprobación + Pago liquidado + Rechazo | M7 | 4 h |
+| Viernes | 17/10 | Integración de variables dinámicas + Configuración SMTP + Pruebas | M7 | 4 h |
 
-**Horas semana 7 (buffer):** 24 h | **Total con buffer:** 245 h ✅
+**Horas semana 7:** 20 h | **Acumulado:** 140 h / 213 h
+
+**✅ Entregable S7:** M5 completo (25 h) + M7 completo (16 h)
 
 ---
 
-## 5.2 Resumen del Cronograma
+### 📅 SEMANA 8 — Del 20 al 24 de octubre (20 h)
+> **Objetivo:** Iniciar y avanzar Módulo de Carga Masiva (M6)
 
-| Semana | Fechas | Módulos | Horas | Acumulado |
-|--------|--------|---------|-------|-----------|
-| S1 | 01 – 05 sep | M1 (completo) + M2 (completo) + M3 (inicio) | 40 h | 40 h |
-| S2 | 08 – 12 sep | M3 (completo) + M4 (inicio) | 40 h | 80 h |
-| S3 | 15 – 19 sep | M4 (completo) + M5 (inicio) | 39 h | 119 h |
-| S4 | 22 – 26 sep | M5 (completo) + M7 (completo) + M6 (inicio) | 36 h | 155 h |
-| S5 | 29 sep – 03 oct | M6 (completo) + M8 (inicio) | 38 h | 193 h |
-| S6 | 06 – 10 oct | M8 (completo) + QA + Despliegue | 20 h + 8 h buffer | 213 h |
-| S7 | 13 – 15 oct | Buffer — Ajustes post-lanzamiento | 24 h | **245 h** ✅ |
+| Día | Fecha | Actividad | Módulo | Horas |
+|-----|-------|-----------|--------|-------|
+| Lunes | 20/10 | Diseño del esquema de importación (mapeo de columnas, validaciones) | M6 | 4 h |
+| Martes | 21/10 | Desarrollo del script de carga masiva — Parsing CSV/Excel | M6 | 4 h |
+| Miércoles | 22/10 | Desarrollo del script — continuación + integración API REST Bitrix24 | M6 | 4 h |
+| Jueves | 23/10 | Lógica de cruce por RUC + N° Factura / OS | M6 | 4 h |
+| Viernes | 24/10 | Actualización masiva de estados en Bitrix24 vía API | M6 | 4 h |
+
+**Horas semana 8:** 20 h | **Acumulado:** 160 h / 213 h
+
+**✅ Entregable S8:** M6 en progreso (20 h de 40 h) — Script base + API funcional
+
+---
+
+### 📅 SEMANA 9 — Del 27 al 31 de octubre (20 h)
+> **Objetivo:** Completar Módulo de Carga Masiva (M6) + Inicio configuración general (M8)
+
+| Día | Fecha | Actividad | Módulo | Horas |
+|-----|-------|-----------|--------|-------|
+| Lunes | 27/10 | Adjunción automática de PDFs de constancias de pago | M6 | 4 h |
+| Martes | 28/10 | Manejo de errores, log de resultados y rollback | M6 | 4 h |
+| Miércoles | 29/10 | Interfaz de carga (UI simple para Tesorería) | M6 | 4 h |
+| Jueves | 30/10 | Pruebas con datos reales de Tesorería | M6 | 4 h |
+| Viernes | 31/10 | Configuración del dominio/subdominio + SSL + acceso seguro | M8 | 4 h |
+
+**Horas semana 9:** 20 h | **Acumulado:** 180 h / 213 h
+
+**✅ Entregable S9:** M6 completo (40 h) + M8 inicio (3 h de 38 h)
+
+---
+
+### 📅 SEMANA 10 — Del 03 al 07 de noviembre (20 h)
+> **Objetivo:** QA + Documentación + Capacitación (M8)
+
+| Día | Fecha | Actividad | Módulo | Horas |
+|-----|-------|-----------|--------|-------|
+| Lunes | 03/11 | Integración con validación de XML SUNAT (si aplica) | M8 | 4 h |
+| Martes | 04/11 | Documentación técnica del sistema (inicio) | M8 | 4 h |
+| Miércoles | 05/11 | Documentación técnica del sistema (fin) | M8 | 4 h |
+| Jueves | 06/11 | Capacitación — Usuarios internos (Finanzas, Contabilidad, Tesorería) | M8 | 4 h |
+| Viernes | 07/11 | Capacitación — Usuarios solicitantes + QA integral (inicio) | M8 | 4 h |
+
+**Horas semana 10:** 20 h | **Acumulado:** 200 h / 213 h
+
+**✅ Entregable S10:** M8 en progreso — Documentación + Capacitación completas (23 h de 38 h)
+
+---
+
+### 📅 SEMANA 11 — Del 10 al 12 de noviembre (13 h) — CIERRE BASE
+> **Objetivo:** Finalizar QA + Correcciones + Despliegue a producción
+
+| Día | Fecha | Actividad | Módulo | Horas |
+|-----|-------|-----------|--------|-------|
+| Lunes | 10/11 | QA integral — Flujo completo: Solicitante → Proveedor → Finanzas | M8 | 4 h |
+| Martes | 11/11 | QA integral — Flujo: Contabilidad → Tesorería → Pago + Corrección bugs | M8 | 4 h |
+| Miércoles | 12/11 | Despliegue a producción y validación final | M8 | 4 h |
+| Miércoles | 12/11 | *(1 h sobrante — inicio buffer)* | Buffer | 1 h |
+
+**Horas semana 11:** 13 h base + 1 h buffer | **Acumulado base:** 213 h ✅
+
+**🏁 CIERRE DEL PROYECTO BASE — 12 de noviembre de 2026**
+
+---
+
+### 📅 SEMANAS 11–13 — Buffer (14 nov al 25 nov, 32 h)
+> **Objetivo:** Absorber imprevistos, ajustes por feedback, pruebas de regresión post-lanzamiento
+
+| Período | Actividad | Horas |
+|---------|-----------|-------|
+| 13 nov (jue–vie) | Buffer — Ajustes por feedback inmediato post-lanzamiento | 7 h |
+| 17–21 nov (S12) | Buffer — Correcciones menores, optimizaciones, ajustes UX | 20 h |
+| 24–25 nov (S13 lun–mar) | Buffer — Validación final y cierre formal del proyecto | 5 h |
+
+**Horas buffer total:** 32 h | **Total con buffer:** 245 h ✅
+
+**🏁 CIERRE FORMAL DEL PROYECTO — 25 de noviembre de 2026**
+
+---
+
+## 5.2 Resumen del Cronograma (4 h/día)
+
+| Semana | Fechas | Módulos | Horas/sem | Acumulado |
+|--------|--------|---------|:---------:|-----------|
+| S1 | 01 – 05 sep | M1 (completo) + M2 (inicio) | 20 h | 20 h |
+| S2 | 08 – 12 sep | M2 (completo) + M3 (inicio) | 20 h | 40 h |
+| S3 | 15 – 19 sep | M3 (completo) + M4 (inicio) | 20 h | 60 h |
+| S4 | 22 – 26 sep | M4 (continúa) | 20 h | 80 h |
+| S5 | 29 sep – 03 oct | M4 (completo) + M5 (inicio) | 20 h | 100 h |
+| S6 | 06 – 10 oct | M5 (continúa) | 20 h | 120 h |
+| S7 | 13 – 17 oct | M5 (completo) + M7 (completo) | 20 h | 140 h |
+| S8 | 20 – 24 oct | M6 (inicio/mitad) | 20 h | 160 h |
+| S9 | 27 – 31 oct | M6 (completo) + M8 (inicio) | 20 h | 180 h |
+| S10 | 03 – 07 nov | M8 (continúa) | 20 h | 200 h |
+| S11 | 10 – 12 nov | M8 (completo) + Despliegue | 13 h | **213 h** ✅ |
+| S12–S13 | 13 – 25 nov | 🛡️ Buffer — Ajustes post-lanzamiento | 32 h | **245 h** ✅ |
 
 ```
-SEP 01 ──────────────────────────────────────────────────── OCT 15
-   │ S1 (M1+M2) │ S2 (M3+M4) │ S3 (M4+M5) │ S4 (M5+M7+M6) │ S5 (M6+M8) │ S6 QA │ S7 🏁 │
-   01/09       08/09        15/09         22/09           29/09        06/10  13/10 15/10
+SEP 01 ─────────────────────────────────────────────── NOV 25
+│ S1 │ S2 │ S3 │ S4 │ S5 │ S6 │ S7 │ S8 │ S9 │ S10 │ S11 🏁 │ Buffer │
+  M1+M2 M2+M3 M3+M4  M4  M4+M5  M5  M5+M7  M6  M6+M8  M8  Despliegue  32h
 ```
 
 > 🗓️ **Fecha de inicio:** 01 de septiembre de 2026  
-> 🏁 **Fecha de cierre (con buffer):** 15 de octubre de 2026  
-> 📆 **Duración total:** 6 semanas y 3 días hábiles (33 días hábiles / ~45 días calendario)
+> 🏁 **Fecha de cierre base (sin buffer):** 12 de noviembre de 2026  
+> 🏁 **Fecha de cierre (con buffer 15%):** 25 de noviembre de 2026  
+> 📆 **Duración total:** 11 semanas base (54 días hábiles) / ~13 semanas con buffer (~62 días hábiles)
 
 ---
 
@@ -492,13 +561,14 @@ SEP 01 ────────────────────────�
 
 | Hito | Entregable | Fecha estimada |
 |------|-----------|----------------|
-| H1 | 🔧 Estructura de datos + Pipeline configurado (M1 + M2) | 05 sep 2026 |
-| H2 | 🔐 Roles, permisos y acceso extranet base (M3) | 09 sep 2026 |
-| H3 | 🌐 Portal Extranet funcional completo (M4) | 17 sep 2026 |
-| H4 | ⚡ Automatizaciones + correos activos (M5 + M7) | 25 sep 2026 |
-| H5 | 📦 Módulo de carga masiva funcional (M6) | 02 oct 2026 |
-| H6 | ✅ QA integral + correcciones + despliegue (M8) | 10 oct 2026 |
-| H7 | 🏁 Cierre formal del proyecto (con buffer) | 15 oct 2026 |
+| H1 | 🔧 Estructura de datos (M1) + Pipeline (M2) completados | 09 sep 2026 |
+| H2 | 🔐 Roles y permisos completos (M3) | 15 sep 2026 |
+| H3 | 🌐 Portal Extranet funcional completo (M4) | 02 oct 2026 |
+| H4 | ⚡ Automatizaciones completas (M5) | 13 oct 2026 |
+| H5 | 📧 Plantillas de correo activas (M7) | 17 oct 2026 |
+| H6 | 📦 Módulo de carga masiva funcional (M6) | 30 oct 2026 |
+| H7 | ✅ QA integral + correcciones + despliegue (M8) | 12 nov 2026 |
+| H8 | 🏁 Cierre formal del proyecto (con buffer 15%) | 25 nov 2026 |
 
 ---
 
